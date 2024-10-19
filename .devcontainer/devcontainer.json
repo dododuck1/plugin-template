@@ -1,5 +1,17 @@
 {
   "image": "mcr.microsoft.com/devcontainers/universal:2",
   "features": {
-  }
+    "java": {
+      "version": "21"
+    }
+  },
+  "settings": {
+    "java.home": "/usr/lib/jvm/msopenjdk-21"
+  },
+  "extensions": [
+    "redhat.java",
+    "vscjava.vscode-java-pack"
+  ],
+  "postCreateCommand": "java -version",
+  "remoteUser": "vscode"
 }
